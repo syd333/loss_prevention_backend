@@ -166,7 +166,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   byebug
-  image_processing (~> 1.2)
+  image_processing (>= 1.2)
   listen (~> 3.3)
   pg (~> 1.1)
   puma (~> 5.0)
