@@ -11,5 +11,8 @@ class User < ApplicationRecord
     has_many :inverse_friends, through: :inverse_friendships, source: :user
 
     has_secure_password 
+    validates :username, uniqueness: { case_sensitive: false }
+    validates :email, presence: true, uniqueness: true
+    validates :bio, presence: true
 
 end
